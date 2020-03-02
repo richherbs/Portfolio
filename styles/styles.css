@@ -1,24 +1,72 @@
+:root{
+    font-size: 16px;
+    font-family: 'oxanian';
+    --text-primary: #f4f4f4;
+    --text-secondary: #3a3535;
+    --bg-primary: #f4f4f4;
+    --bg-secondary: #3a3535;
+}
+
 body{
     margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #3a3535;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #ff7315;
 }
 
 /* Header element */
-#header{
-    background-color: #3a3535;
-    color: #f4f4f4;
-    height: 6rem;
+.nav-bar{
+    display: flex;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    height: 3rem;
+    width: 100vw;
+    position: fixed;
+    margin: 0;
+    justify-items: flex-end;
 }
 
-.nav-bar{
-    text-align: right;
+.nav-bar:hover{
+    height: 6remw
+}
+
+.nav-bar:hover .link-text{
+    display: block;
+}
+
+.nav-item{
+    text-decoration: none;
+}
+
+.nav-link{
+    height: 3rem;
+    width: 1rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    padding: 0 3rem;
+    margin: auto 3rem;
+}
+
+.nav-link:first-child{
+    margin-right: auto;
+}
+
+.nav-image{
+    height: 2rem;
 }
 
 .logo{
     width: 4rem;
-    height: auto;
-    margin-top: 1rem;
-    float: left;
-    margin-left: 1rem;
 }
 
 .display-inline{
@@ -30,7 +78,7 @@ body{
     padding: 10px;
     font-family: 'oxanium';
     position: relative;
-    top: 2rem;
+    top: 1.25rem;
     font-size: 2rem;
     color: #f4f4f4;
     text-decoration: none;
@@ -40,6 +88,10 @@ body{
 
 .nav-button:hover{
     background-color: #ff7315;
+}
+
+.link-text{
+    display: none;
 }
 
 /* About me section */
@@ -53,19 +105,24 @@ body{
 #footer{
     background-color: #232020;
     color: #f4f4f4;
-    height: 30vh;
+    height: 4rem;
     display: flex;
     font-family: 'oxanium';
     justify-content: space-around;
     align-content: center;
+    padding-top: 1rem;
 }
 
 .copyright{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .social-image{
     width: 3rem;
     background-color: transparent;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     margin: 0 2rem;
+}
+
+@media screen and(max-width 770px){
+
 }
