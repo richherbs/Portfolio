@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb{
     position: fixed;
     margin: 0;
     justify-items: flex-end;
-    transition: height 200ms ease;
+    transition: height 0.5s ease;
 }
 
 .link-text{
@@ -72,12 +72,12 @@ body::-webkit-scrollbar-thumb{
 }
 
 .grayscale-transition{
-    filter: grayscale(100%);
+    filter: grayscale(0%)
 }
 
 .nav-bar:hover .grayscale-transition{
     /* display: none; */
-    filter: grayscale(0%);
+    filter: grayscale(100%);
     transition: all 0.7s ease;
 }
 
@@ -87,12 +87,15 @@ body::-webkit-scrollbar-thumb{
 }
 
 .nav-arrow{
+    position: relative;
+    top: 0.4rem;
     height: 80%;
     border-bottom: 0;
     transition: all 0.5s ease;
 }
 
 .nav-bar:hover .nav-arrow{
+    top: 3.5rem;
     transform: rotate(-180deg);
 }
 /* About me section */
