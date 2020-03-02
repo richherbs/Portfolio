@@ -1,6 +1,7 @@
 :root{
     font-size: 16px;
-    font-family: 'oxanian';
+    font-family: 'Oxanium';
+    --font-secondary: 'Spartan';
     --text-primary: #f4f4f4;
     --text-secondary: #3a3535;
     --bg-primary: #f4f4f4;
@@ -24,6 +25,11 @@ body::-webkit-scrollbar-thumb{
     background: #ff7315;
 }
 
+
+.display-inline{
+    display: inline;
+}
+
 /* Header element */
 .nav-bar{
     display: flex;
@@ -34,27 +40,36 @@ body::-webkit-scrollbar-thumb{
     position: fixed;
     margin: 0;
     justify-items: flex-end;
+    transition: height 200ms ease;
 }
 
 .nav-bar:hover{
-    height: 6remw
+    height: 7rem;
 }
 
 .nav-bar:hover .link-text{
     display: block;
 }
 
-.nav-item{
-    text-decoration: none;
+.link-text{
+    font-size: 2rem;
+    font-family: var(-);
+    color: var(--text-primary);
+    display: none;
+    border: 2px solid var(--text-primary);
+    padding: 5px;
+    text-align: center;
+}
+
+.link-text:hover{
+    background-color: #ff7315;
 }
 
 .nav-link{
     height: 3rem;
-    width: 1rem;
     text-decoration: none;
     color: var(--text-primary);
-    padding: 0 3rem;
-    margin: auto 3rem;
+    margin: 0 3rem;
 }
 
 .nav-link:first-child{
@@ -62,38 +77,29 @@ body::-webkit-scrollbar-thumb{
 }
 
 .nav-image{
-    height: 2rem;
+    height: 80%;
+    margin: 5px 55px;
+}
+
+.nav-bar:hover .nav-image{
+    /* display: none; */
+    filter: blur(2px);
+    transition: all 0.7s ease;
 }
 
 .logo{
     width: 4rem;
 }
 
-.display-inline{
-    display: inline;
+.nav-arrow{
+    height: 80%;
+    border-bottom: 0;
+    transition: all 0.5s ease;
 }
 
-.nav-button{
-    border: 3px solid #ffffff;
-    padding: 10px;
-    font-family: 'oxanium';
-    position: relative;
-    top: 1.25rem;
-    font-size: 2rem;
-    color: #f4f4f4;
-    text-decoration: none;
-    text-align: right;
-    margin: 2rem;
+.nav-bar:hover .nav-arrow{
+    transform: rotate(-180deg);
 }
-
-.nav-button:hover{
-    background-color: #ff7315;
-}
-
-.link-text{
-    display: none;
-}
-
 /* About me section */
 #main{
     background-color: #f4f4f4;
@@ -107,7 +113,6 @@ body::-webkit-scrollbar-thumb{
     color: #f4f4f4;
     height: 4rem;
     display: flex;
-    font-family: 'oxanium';
     justify-content: space-around;
     align-content: center;
     padding-top: 1rem;
@@ -123,6 +128,6 @@ body::-webkit-scrollbar-thumb{
     margin: 0 2rem;
 }
 
-@media screen and(max-width 770px){
+/* @media screen and(max-width 770px){
 
-}
+} */
