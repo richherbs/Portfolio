@@ -6,46 +6,66 @@ body{
 #header{
     background-color: #3a3535;
     color: #f4f4f4;
-    height: 20vh;
+    height: 6rem;
 }
 
-.nav{
-    margin: 0;
-}
-
-.breadcrumbs{
-    text-decoration: none;
+.nav-bar{
     text-align: right;
-    margin: 0;
 }
 
 .logo{
-    height: 6rem;
-    width: auto;
-    display: inline-block;
-}
-
-.nav-logo{
+    width: 4rem;
+    height: auto;
+    margin-top: 1rem;
     float: left;
+    margin-left: 1rem;
 }
 
-.nav-link{
-    font-family: 'Oxanium';
+.display-inline{
+    display: inline;
+}
+
+.nav-button{
+    border: 3px solid #ffffff;
+    padding: 10px;
+    font-family: 'oxanium';
+    position: relative;
+    top: 2rem;
     font-size: 2rem;
     color: #f4f4f4;
-    display: inline-block;
     text-decoration: none;
     text-align: right;
+    margin: 2rem;
+}
+
+.nav-button:hover{
+    background-color: #ff7315;
 }
 
 /* About me section */
 #main{
     background-color: #f4f4f4;
     height: 70vh;
+    color: #3a3535;
 }
 
 /* Contact me section */
 #footer{
     background-color: #232020;
+    color: #f4f4f4;
     height: 30vh;
+    display: flex;
+    font-family: 'oxanium';
+    justify-content: space-around;
+    align-content: center;
+}
+
+.copyright{
+    margin-top: 3rem;
+}
+.social-image{
+    width: 3rem;
+    background-color: transparent;
+    padding-top: 2rem;
+    margin: 0 2rem;
 }
