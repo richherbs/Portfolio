@@ -1,19 +1,37 @@
 /* Header element */
 #header{
+    background-color: #3a3535;
+    color: #f4f4f4;
+    height: 20vh;
+}
 
+.breadcrumbs{
+    text-decoration: none;
+}
+
+.logo{
+    height: 6rem;
+    width: auto;
+    display: inline-block;
+}
+
+.nav-logo{
+    float: left;
+}
+
+.nav-link{
+    font-family: 'Oxanium', ;
+    display: inline-block;
 }
 
 /* About me section */
-#about{
-
-}
-
-/* Portfolio section */
-#portfolio{
-
+#main{
+    background-color: #f4f4f4;
+    height: 70vh;
 }
 
 /* Contact me section */
-#contacts{
-
+#footer{
+    background-color: #232020;
+    height: 30vh;
 }
