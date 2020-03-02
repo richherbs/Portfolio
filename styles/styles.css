@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 /* Header element */
 #header{
     background-color: #3a3535;
@@ -5,8 +9,14 @@
     height: 20vh;
 }
 
+.nav{
+    margin: 0;
+}
+
 .breadcrumbs{
     text-decoration: none;
+    text-align: right;
+    margin: 0;
 }
 
 .logo{
@@ -20,8 +30,12 @@
 }
 
 .nav-link{
-    font-family: 'Oxanium', ;
+    font-family: 'Oxanium';
+    font-size: 2rem;
+    color: #f4f4f4;
     display: inline-block;
+    text-decoration: none;
+    text-align: right;
 }
 
 /* About me section */
